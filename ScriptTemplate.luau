@@ -59,7 +59,7 @@ MainTitle.Active = false
 MainTitle.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 MainTitle.Size = UDim2.new(0, 314, 0, 66)
 MainTitle.Font = Enum.Font.SciFi
-MainTitle.Text = "GUI"
+MainTitle.Text = "Shelves GUI"
 MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 MainTitle.TextSize = 40
 
