@@ -179,7 +179,9 @@ Button1.Text = "Button 1"
 Button1.TextColor3 = Color3.fromRGB(255,255,255)
 Button1.TextSize = 36
 Button1.Visible = true
-Button1.MouseButton1Down:Connect(function() print("Button 1 clicked") end)
+Button1.MouseButton1Down:Connect(function()
+	print("Button 1 clicked")
+end)
 
 Button2.Name = "Button2"
 Button2.Parent = Main
@@ -191,7 +193,9 @@ Button2.Text = "Button 2"
 Button2.TextColor3 = Color3.fromRGB(255,255,255)
 Button2.TextSize = 36
 Button2.Visible = true
-Button2.MouseButton1Down:Connect(function() print("Button 2 clicked") end)
+Button2.MouseButton1Down:Connect(function()
+	print("Button 2 clicked")
+end)
 
 Button3.Name = "Button3"
 Button3.Parent = Main
@@ -203,7 +207,9 @@ Button3.Text = "Button 3"
 Button3.TextColor3 = Color3.fromRGB(255,255,255)
 Button3.TextSize = 36
 Button3.Visible = true
-Button3.MouseButton1Down:Connect(function() print("Button 3 clicked") end)
+Button3.MouseButton1Down:Connect(function()
+	print("Button 3 clicked")
+end)
 
 Button4.Name = "Button4"
 Button4.Parent = Main
@@ -215,7 +221,9 @@ Button4.Text = "Button 4"
 Button4.TextColor3 = Color3.fromRGB(255,255,255)
 Button4.TextSize = 36
 Button4.Visible = true
-Button4.MouseButton1Down:Connect(function() print("Button 4 clicked") end)
+Button4.MouseButton1Down:Connect(function()
+	print("Button 4 clicked")
+end)
 
 Button5.Name = "Button5"
 Button5.Parent = Main
@@ -227,9 +235,10 @@ Button5.Text = "Button 5"
 Button5.TextColor3 = Color3.fromRGB(255,255,255)
 Button5.TextSize = 36
 Button5.Visible = true
-Button5.MouseButton1Down:Connect(function() print("Button 5 clicked") end)
+Button5.MouseButton1Down:Connect(function()
+	print("Button 5 clicked")
+end)
 
--- TAB 2 BUTTONS
 Button6.Name = "Button6"
 Button6.Parent = Main
 Button6.BackgroundColor3 = Color3.fromRGB(63,63,63)
@@ -240,7 +249,9 @@ Button6.Text = "Button 6"
 Button6.TextColor3 = Color3.fromRGB(255,255,255)
 Button6.TextSize = 36
 Button6.Visible = false
-Button6.MouseButton1Down:Connect(function() print("Button 6 clicked") end)
+Button6.MouseButton1Down:Connect(function()
+	print("Button 6 clicked")
+end)
 
 Button7.Name = "Button7"
 Button7.Parent = Main
@@ -252,7 +263,9 @@ Button7.Text = "Button 7"
 Button7.TextColor3 = Color3.fromRGB(255,255,255)
 Button7.TextSize = 36
 Button7.Visible = false
-Button7.MouseButton1Down:Connect(function() print("Button 7 clicked") end)
+Button7.MouseButton1Down:Connect(function()
+	print("Button 7 clicked")
+end)
 
 Button8.Name = "Button8"
 Button8.Parent = Main
@@ -264,7 +277,9 @@ Button8.Text = "Button 8"
 Button8.TextColor3 = Color3.fromRGB(255,255,255)
 Button8.TextSize = 36
 Button8.Visible = false
-Button8.MouseButton1Down:Connect(function() print("Button 8 clicked") end)
+Button8.MouseButton1Down:Connect(function()
+	print("Button 8 clicked")
+end)
 
 Button9.Name = "Button9"
 Button9.Parent = Main
@@ -276,7 +291,9 @@ Button9.Text = "Button 9"
 Button9.TextColor3 = Color3.fromRGB(255,255,255)
 Button9.TextSize = 36
 Button9.Visible = false
-Button9.MouseButton1Down:Connect(function() print("Button 9 clicked") end)
+Button9.MouseButton1Down:Connect(function()
+	print("Button 9 clicked")
+end)
 
 Button10.Name = "Button10"
 Button10.Parent = Main
@@ -288,9 +305,10 @@ Button10.Text = "Button 10"
 Button10.TextColor3 = Color3.fromRGB(255,255,255)
 Button10.TextSize = 36
 Button10.Visible = false
-Button10.MouseButton1Down:Connect(function() print("Button 10 clicked") end)
+Button10.MouseButton1Down:Connect(function()
+	print("Button 10 clicked")
+end)
 
--- TAB 3 BUTTONS
 Button11.Name = "Button11"
 Button11.Parent = Main
 Button11.BackgroundColor3 = Color3.fromRGB(63,63,63)
@@ -301,7 +319,9 @@ Button11.Text = "Button 11"
 Button11.TextColor3 = Color3.fromRGB(255,255,255)
 Button11.TextSize = 36
 Button11.Visible = false
-Button11.MouseButton1Down:Connect(function() print("Button 11 clicked") end)
+Button11.MouseButton1Down:Connect(function()
+	print("Button 11 clicked")
+end)
 
 Button12.Name = "Button12"
 Button12.Parent = Main
@@ -313,7 +333,9 @@ Button12.Text = "Button 12"
 Button12.TextColor3 = Color3.fromRGB(255,255,255)
 Button12.TextSize = 36
 Button12.Visible = false
-Button12.MouseButton1Down:Connect(function() print("Button 12 clicked") end)
+Button12.MouseButton1Down:Connect(function()
+	print("Button 12 clicked")
+end)
 
 Button13.Name = "Button13"
 Button13.Parent = Main
@@ -325,7 +347,9 @@ Button13.Text = "Button 13"
 Button13.TextColor3 = Color3.fromRGB(255,255,255)
 Button13.TextSize = 36
 Button13.Visible = false
-Button13.MouseButton1Down:Connect(function() print("Button 13 clicked") end)
+Button13.MouseButton1Down:Connect(function()
+	print("Button 13 clicked")
+end)
 
 Button14.Name = "Button14"
 Button14.Parent = Main
@@ -337,7 +361,9 @@ Button14.Text = "Button 14"
 Button14.TextColor3 = Color3.fromRGB(255,255,255)
 Button14.TextSize = 36
 Button14.Visible = false
-Button14.MouseButton1Down:Connect(function() print("Button 14 clicked") end)
+Button14.MouseButton1Down:Connect(function()
+	print("Button 14 clicked")
+end)
 
 Button15.Name = "Button15"
 Button15.Parent = Main
@@ -349,9 +375,10 @@ Button15.Text = "Button 15"
 Button15.TextColor3 = Color3.fromRGB(255,255,255)
 Button15.TextSize = 36
 Button15.Visible = false
-Button15.MouseButton1Down:Connect(function() print("Button 15 clicked") end)
+Button15.MouseButton1Down:Connect(function()
+	print("Button 15 clicked")
+end)
 
--- TAB 4 BUTTONS
 Button16.Name = "Button16"
 Button16.Parent = Main
 Button16.BackgroundColor3 = Color3.fromRGB(63,63,63)
@@ -362,7 +389,9 @@ Button16.Text = "Button 16"
 Button16.TextColor3 = Color3.fromRGB(255,255,255)
 Button16.TextSize = 36
 Button16.Visible = false
-Button16.MouseButton1Down:Connect(function() print("Button 16 clicked") end)
+Button16.MouseButton1Down:Connect(function()
+	print("Button 16 clicked")
+end)
 
 Button17.Name = "Button17"
 Button17.Parent = Main
@@ -374,7 +403,9 @@ Button17.Text = "Button 17"
 Button17.TextColor3 = Color3.fromRGB(255,255,255)
 Button17.TextSize = 36
 Button17.Visible = false
-Button17.MouseButton1Down:Connect(function() print("Button 17 clicked") end)
+Button17.MouseButton1Down:Connect(function()
+	print("Button 17 clicked")
+end)
 
 Button18.Name = "Button18"
 Button18.Parent = Main
@@ -386,7 +417,9 @@ Button18.Text = "Button 18"
 Button18.TextColor3 = Color3.fromRGB(255,255,255)
 Button18.TextSize = 36
 Button18.Visible = false
-Button18.MouseButton1Down:Connect(function() print("Button 18 clicked") end)
+Button18.MouseButton1Down:Connect(function()
+	print("Button 18 clicked")
+end)
 
 Button19.Name = "Button19"
 Button19.Parent = Main
@@ -398,7 +431,9 @@ Button19.Text = "Button 19"
 Button19.TextColor3 = Color3.fromRGB(255,255,255)
 Button19.TextSize = 36
 Button19.Visible = false
-Button19.MouseButton1Down:Connect(function() print("Button 19 clicked") end)
+Button19.MouseButton1Down:Connect(function()
+	print("Button 19 clicked")
+end)
 
 Button20.Name = "Button20"
 Button20.Parent = Main
@@ -410,9 +445,10 @@ Button20.Text = "Button 20"
 Button20.TextColor3 = Color3.fromRGB(255,255,255)
 Button20.TextSize = 36
 Button20.Visible = false
-Button20.MouseButton1Down:Connect(function() print("Button 20 clicked") end)
+Button20.MouseButton1Down:Connect(function()
+	print("Button 20 clicked")
+end)
 
--- TAB 5 BUTTONS
 Button21.Name = "Button21"
 Button21.Parent = Main
 Button21.BackgroundColor3 = Color3.fromRGB(63,63,63)
@@ -423,7 +459,9 @@ Button21.Text = "Button 21"
 Button21.TextColor3 = Color3.fromRGB(255,255,255)
 Button21.TextSize = 36
 Button21.Visible = false
-Button21.MouseButton1Down:Connect(function() print("Button 21 clicked") end)
+Button21.MouseButton1Down:Connect(function()
+	print("Button 21 clicked")
+end)
 
 Button22.Name = "Button22"
 Button22.Parent = Main
@@ -435,7 +473,9 @@ Button22.Text = "Button 22"
 Button22.TextColor3 = Color3.fromRGB(255,255,255)
 Button22.TextSize = 36
 Button22.Visible = false
-Button22.MouseButton1Down:Connect(function() print("Button 22 clicked") end)
+Button22.MouseButton1Down:Connect(function()
+	print("Button 22 clicked")
+end)
 
 Button23.Name = "Button23"
 Button23.Parent = Main
@@ -447,7 +487,9 @@ Button23.Text = "Button 23"
 Button23.TextColor3 = Color3.fromRGB(255,255,255)
 Button23.TextSize = 36
 Button23.Visible = false
-Button23.MouseButton1Down:Connect(function() print("Button 23 clicked") end)
+Button23.MouseButton1Down:Connect(function()
+	print("Button 23 clicked")
+end)
 
 Button24.Name = "Button24"
 Button24.Parent = Main
@@ -459,7 +501,9 @@ Button24.Text = "Button 24"
 Button24.TextColor3 = Color3.fromRGB(255,255,255)
 Button24.TextSize = 36
 Button24.Visible = false
-Button24.MouseButton1Down:Connect(function() print("Button 24 clicked") end)
+Button24.MouseButton1Down:Connect(function()
+	print("Button 24 clicked")
+end)
 
 Button25.Name = "Button25"
 Button25.Parent = Main
@@ -471,9 +515,10 @@ Button25.Text = "Button 25"
 Button25.TextColor3 = Color3.fromRGB(255,255,255)
 Button25.TextSize = 36
 Button25.Visible = false
-Button25.MouseButton1Down:Connect(function() print("Button 25 clicked") end)
+Button25.MouseButton1Down:Connect(function()
+	print("Button 25 clicked")
+end)
 
--- TAB 6 BUTTONS
 Button26.Name = "Button26"
 Button26.Parent = Main
 Button26.BackgroundColor3 = Color3.fromRGB(63,63,63)
@@ -484,7 +529,9 @@ Button26.Text = "Button 26"
 Button26.TextColor3 = Color3.fromRGB(255,255,255)
 Button26.TextSize = 36
 Button26.Visible = false
-Button26.MouseButton1Down:Connect(function() print("Button 26 clicked") end)
+Button26.MouseButton1Down:Connect(function()
+	print("Button 26 clicked")
+end)
 
 Button27.Name = "Button27"
 Button27.Parent = Main
@@ -496,7 +543,9 @@ Button27.Text = "Button 27"
 Button27.TextColor3 = Color3.fromRGB(255,255,255)
 Button27.TextSize = 36
 Button27.Visible = false
-Button27.MouseButton1Down:Connect(function() print("Button 27 clicked") end)
+Button27.MouseButton1Down:Connect(function()
+	print("Button 27 clicked")
+end)
 
 Button28.Name = "Button28"
 Button28.Parent = Main
@@ -508,7 +557,9 @@ Button28.Text = "Button 28"
 Button28.TextColor3 = Color3.fromRGB(255,255,255)
 Button28.TextSize = 36
 Button28.Visible = false
-Button28.MouseButton1Down:Connect(function() print("Button 28 clicked") end)
+Button28.MouseButton1Down:Connect(function()
+	print("Button 28 clicked")
+end)
 
 Button29.Name = "Button29"
 Button29.Parent = Main
@@ -520,7 +571,9 @@ Button29.Text = "Button 29"
 Button29.TextColor3 = Color3.fromRGB(255,255,255)
 Button29.TextSize = 36
 Button29.Visible = false
-Button29.MouseButton1Down:Connect(function() print("Button 29 clicked") end)
+Button29.MouseButton1Down:Connect(function()
+	print("Button 29 clicked")
+end)
 
 Button30.Name = "Button30"
 Button30.Parent = Main
@@ -532,9 +585,10 @@ Button30.Text = "Button 30"
 Button30.TextColor3 = Color3.fromRGB(255,255,255)
 Button30.TextSize = 36
 Button30.Visible = false
-Button30.MouseButton1Down:Connect(function() print("Button 30 clicked") end)
+Button30.MouseButton1Down:Connect(function()
+	print("Button 30 clicked")
+end)
 
--- TAB TOGGLE FUNCTIONS
 _1Toggle.MouseButton1Down:Connect(function()
 	SectionTitle.Text = "Tab 1"
 	Button1.Visible = true
