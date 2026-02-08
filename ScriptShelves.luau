@@ -11,6 +11,7 @@ local _3Toggle = Instance.new("TextButton")
 local _4Toggle = Instance.new("TextButton")
 local _5Toggle = Instance.new("TextButton")
 local _6Toggle = Instance.new("TextButton")
+local _7Toggle = Instance.new("TextButton")
 local Button1 = Instance.new("TextButton")
 local Button2 = Instance.new("TextButton")
 local Button3 = Instance.new("TextButton")
@@ -41,8 +42,12 @@ local Button27 = Instance.new("TextButton")
 local Button28 = Instance.new("TextButton")
 local Button29 = Instance.new("TextButton")
 local Button30 = Instance.new("TextButton")
+local Button31 = Instance.new("TextButton")
+local Button32 = Instance.new("TextButton")
+local stockButton = Instance.new("TextButton")
 
 local SF = game:GetService("Workspace"):FindFirstChild("Buildings"):FindFirstChild("CubeMart"):FindFirstChild("StockFillerModels")
+local CM = game:GetService("Workspace"):FindFirstChild("Buildings"):FindFirstChild("CubeMart")
 local StockFiller1 = SF.StockFiller1
 local StockFiller2 = SF.StockFiller2
 local StockFiller3 = SF.StockFiller3
@@ -73,6 +78,9 @@ local StockFiller27 = SF.StockFiller27
 local StockFiller28 = SF.StockFiller28
 local StockFiller29 = SF.StockFiller29
 local StockFiller30 = SF.StockFiller30
+local StockFiller31 = SF.StockFiller31
+local StockFiller32 = SF.StockFiller32
+local StockBox = CM:FindFirstChild("CindersStock")
 local A1 = StockFiller1.WorldPivot.Position.X; local A2 = StockFiller1.WorldPivot.Position.Y; local A3 = StockFiller1.WorldPivot.Position.Z - 4
 local B1 = StockFiller2.WorldPivot.Position.X; local B2 = StockFiller2.WorldPivot.Position.Y; local B3 = StockFiller2.WorldPivot.Position.Z - 4
 local C1 = StockFiller3.WorldPivot.Position.X; local C2 = StockFiller3.WorldPivot.Position.Y; local C3 = StockFiller3.WorldPivot.Position.Z - 4
@@ -103,6 +111,9 @@ local AA1 = StockFiller27.WorldPivot.Position.X - 4; local AA2 = StockFiller27.W
 local AB1 = StockFiller28.WorldPivot.Position.X; local AB2 = StockFiller28.WorldPivot.Position.Y; local AB3 = StockFiller28.WorldPivot.Position.Z - 4
 local AC1 = StockFiller29.WorldPivot.Position.X; local AC2 = StockFiller29.WorldPivot.Position.Y; local AC3 = StockFiller29.WorldPivot.Position.Z - 4
 local AD1 = StockFiller30.WorldPivot.Position.X; local AD2 = StockFiller30.WorldPivot.Position.Y; local AD3 = StockFiller30.WorldPivot.Position.Z - 4
+local AE1 = StockFiller31.WorldPivot.Position.X; local AE2 = StockFiller31.WorldPivot.Position.Y; local AE3 = StockFiller31.WorldPivot.Position.Z - 4
+local AF1 = StockFiller32.WorldPivot.Position.X; local AF2 = StockFiller32.WorldPivot.Position.Y; local AF3 = StockFiller32.WorldPivot.Position.Z - 4
+local SB1 = StockBox.WorldPivot.Position.X + 3; local SB2 = StockBox.WorldPivot.Position.Y; local SB3 = StockBox.WorldPivot.Position.Z + 3; 
 
 local TS = game:GetService("TweenService")
 local plr = game:GetService("Players").LocalPlayer
@@ -161,8 +172,8 @@ Main.Draggable = true
 CloseMain.Name = "CloseMain"
 CloseMain.Parent = Main
 CloseMain.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CloseMain.Position = UDim2.new(0.777, 2, 0, 0)
-CloseMain.Size = UDim2.new(0.005, 74, 0, 46)
+CloseMain.Position = UDim2.new(1, -30, 0, 0)
+CloseMain.Size = UDim2.new(0, 30, 0, 46)
 CloseMain.Font = Enum.Font.SciFi
 CloseMain.Text = "X"
 CloseMain.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -240,6 +251,16 @@ _6Toggle.Font = Enum.Font.SciFi
 _6Toggle.Text = "6"
 _6Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 _6Toggle.TextSize = 36
+
+_7Toggle.Name = "7Toggle"
+_7Toggle.Parent = Main
+_7Toggle.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+_7Toggle.Position = UDim2.new(0.78, 0, 0.002, 0)
+_7Toggle.Size = UDim2.new(0, 45, 0, 45)
+_7Toggle.Font = Enum.Font.SciFi
+_7Toggle.Text = "7"
+_7Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+_7Toggle.TextSize = 36
 
 Button1.Name = "Button1"
 Button1.Parent = Main
@@ -661,8 +682,51 @@ Button30.MouseButton1Down:Connect(function()
 	tppos(AD1, AD2, AD3)
 end)
 
+Button31.Name = "Button31"
+Button31.Parent = Main
+Button31.BackgroundColor3 = Color3.fromRGB(63,63,63)
+Button31.Position = UDim2.new(0.09, 0, 0.3, 0)
+Button31.Size = UDim2.new(0, 284, 0, 50)
+Button31.Font = Enum.Font.SciFi
+Button31.Text = "Shelf 31"
+Button31.TextColor3 = Color3.fromRGB(255,255,255)
+Button31.TextSize = 40.000
+Button31.Visible = false
+Button31.MouseButton1Down:Connect(function()
+	tppos(AE1, AE2, AE3)
+end)
+
+Button32.Name = "Button32"
+Button32.Parent = Main
+Button32.BackgroundColor3 = Color3.fromRGB(63,63,63)
+Button32.Position = UDim2.new(0.09,0,0.52,0)
+Button32.Size = UDim2.new(0,284,0,50)
+Button32.Font = Enum.Font.SciFi
+Button32.Text = "Shelf 32"
+Button32.TextColor3 = Color3.fromRGB(255,255,255)
+Button32.TextSize = 40.000
+Button32.Visible = false
+Button32.MouseButton1Down:Connect(function()
+	tppos(AF1, AF2, AF3)
+end)
+
+stockButton.Name = "stockButton"
+stockButton.Parent = Main
+stockButton.BackgroundColor3 = Color3.fromRGB(63,63,63)
+stockButton.Position = UDim2.new(0.09, 0, 0.74, 0)
+stockButton.Size = UDim2.new(0, 284, 0, 50)
+stockButton.Font = Enum.Font.SciFi
+stockButton.Text = "Stock"
+stockButton.TextColor3 = Color3.fromRGB(255,255,255)
+stockButton.TextSize = 40.000
+stockButton.Visible = false
+stockButton.MouseButton1Down:Connect(function()
+	tppos(SB1, SB2, SB3)
+end)
+
+
 _1Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 1"
+	SectionTitle.Text = "Shelves 1-5"
 	Button1.Visible = true
 	Button2.Visible = true
 	Button3.Visible = true
@@ -693,10 +757,13 @@ _1Toggle.MouseButton1Down:Connect(function()
 	Button28.Visible = false
 	Button29.Visible = false
 	Button30.Visible = false
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
 end)
 
 _2Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 2"
+	SectionTitle.Text = "Shelves 6-10"
 	Button1.Visible = false
 	Button2.Visible = false
 	Button3.Visible = false
@@ -705,8 +772,8 @@ _2Toggle.MouseButton1Down:Connect(function()
 	Button6.Visible = true
 	Button7.Visible = true
 	Button8.Visible = true
-Button9.Visible = true
-Button10.Visible = true
+	Button9.Visible = true
+	Button10.Visible = true
 	Button11.Visible = false
 	Button12.Visible = false
 	Button13.Visible = false
@@ -727,10 +794,13 @@ Button10.Visible = true
 	Button28.Visible = false
 	Button29.Visible = false
 	Button30.Visible = false
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
 end)
 
 _3Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 3"
+	SectionTitle.Text = "Shelves 11-15"
 	Button1.Visible = false
 	Button2.Visible = false
 	Button3.Visible = false
@@ -761,10 +831,13 @@ _3Toggle.MouseButton1Down:Connect(function()
 	Button28.Visible = false
 	Button29.Visible = false
 	Button30.Visible = false
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
 end)
 
 _4Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 4"
+	SectionTitle.Text = "Shelves 16-20"
 	Button1.Visible = false
 	Button2.Visible = false
 	Button3.Visible = false
@@ -795,10 +868,13 @@ _4Toggle.MouseButton1Down:Connect(function()
 	Button28.Visible = false
 	Button29.Visible = false
 	Button30.Visible = false
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
 end)
 
 _5Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 5"
+	SectionTitle.Text = "Shelves 21-25"
 	Button1.Visible = false
 	Button2.Visible = false
 	Button3.Visible = false
@@ -829,10 +905,13 @@ _5Toggle.MouseButton1Down:Connect(function()
 	Button28.Visible = false
 	Button29.Visible = false
 	Button30.Visible = false
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
 end)
 
 _6Toggle.MouseButton1Down:Connect(function()
-	SectionTitle.Text = "Tab 6"
+	SectionTitle.Text = "Shelves 26-30"
 	Button1.Visible = false
 	Button2.Visible = false
 	Button3.Visible = false
@@ -863,4 +942,45 @@ _6Toggle.MouseButton1Down:Connect(function()
 	Button28.Visible = true
 	Button29.Visible = true
 	Button30.Visible = true
+	Button31.Visible = false
+	Button32.Visible = false
+	stockButton.Visible = false
+
+end)
+
+_7Toggle.MouseButton1Down:Connect(function()
+	SectionTitle.Text = "Shelves 31-32 + stock"
+	Button1.Visible = false
+	Button2.Visible = false
+	Button3.Visible = false
+	Button4.Visible = false
+	Button5.Visible = false
+	Button6.Visible = false
+	Button7.Visible = false
+	Button8.Visible = false
+	Button9.Visible = false
+	Button10.Visible = false
+	Button11.Visible = false
+	Button12.Visible = false
+	Button13.Visible = false
+	Button14.Visible = false
+	Button15.Visible = false
+	Button16.Visible = false
+	Button17.Visible = false
+	Button18.Visible = false
+	Button19.Visible = false
+	Button20.Visible = false
+	Button21.Visible = false
+	Button22.Visible = false
+	Button23.Visible = false
+	Button24.Visible = false
+	Button25.Visible = false
+	Button26.Visible = false
+	Button27.Visible = false
+	Button28.Visible = false
+	Button29.Visible = false
+	Button30.Visible = false
+	Button31.Visible = true
+	Button32.Visible = true
+	stockButton.Visible = true
 end)
